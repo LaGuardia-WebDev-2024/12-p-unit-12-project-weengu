@@ -21,34 +21,36 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz About [Tony]</h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🍽 What is my favorite food?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">spagetti</option>
+          <option value="movie2">salad</option>
+          <option value="movie3">pizza</option>
+          <option value="movie4">hamburger</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check food Answer</button>
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
+       <img id="spagetti" src="https://media.lacucinaitaliana.com/photos/5ead808cca16d9a40097954b/master/w_900,c_limit/sopranos%204.jpghttps://media.lacucinaitaliana.com/photos/5ead808cca16d9a40097954b/master/w_900,c_limit/sopranos%204.jpg" width="300">
     </div>
+   
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite thing to watch?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">cooking channel</option>
+          <option value="book2">history channel</option>
+          <option value="book3">reality tv</option>
+          <option value="book4">cartoons</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -59,7 +61,8 @@ Select ONE Additional Feature to Add
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       
-      //========================Movie Question jQuery Code
+      //========================Movie Question jQuery Code]
+      $("#spagetti").hide;
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
 
@@ -68,6 +71,7 @@ Select ONE Additional Feature to Add
 
         if (answer === "movie1") {
           $("#movie-text").text("YESSSS!");
+          $("#spagetti").show;
         } 
         else {
           $("#movie-text").text("Try Again!");
@@ -81,7 +85,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
+        if (answer === "book2") {
           $("#book-text").text("YESSSS!");
         } 
         else {

@@ -1,5 +1,5 @@
 #movie-result {
-  background: rgb(244, 98, 181);
+  background: rgb(244, 98, 98);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
@@ -8,7 +8,7 @@
 }
 
 #book-result {
-  background: rgb(196, 159, 255);
+  background: rgb(240, 99, 99);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
