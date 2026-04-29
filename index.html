@@ -28,9 +28,9 @@ Select ONE Additional Feature to Add
       <label>
         🍽 What is my favorite food?
         <select id="movie-answer">
-          <option value="movie1">spagetti</option>
+          <option value="movie1">sushi</option>
           <option value="movie2">salad</option>
-          <option value="movie3">pizza</option>
+          <option value="movie3">spagetti</option>
           <option value="movie4">hamburger</option>
         </select>
       </label>
@@ -38,7 +38,8 @@ Select ONE Additional Feature to Add
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
-       <img id="spagetti" src="https://media.lacucinaitaliana.com/photos/5ead808cca16d9a40097954b/master/w_900,c_limit/sopranos%204.jpghttps://media.lacucinaitaliana.com/photos/5ead808cca16d9a40097954b/master/w_900,c_limit/sopranos%204.jpg" width="300">
+       <img id="spagetti"
+        src="https://media.lacucinaitaliana.com/photos/5ead808cca16d9a40097954b/master/w_900,c_limit/sopranos%204.jpghttps://media.lacucinaitaliana.com/photos/5ead808cca16d9a40097954b/master/w_900,c_limit/sopranos%204.jpg" width="300">
     </div>
    
     <hr />
@@ -57,21 +58,23 @@ Select ONE Additional Feature to Add
     </form>
     <div id="book-result">
       <p id="book-text"></p>
+      <img id="history"
+       src="https://y.yarn.co/d05f597b-f1af-4a51-b111-0c476a72c0fd_text.gif">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      
+    $("img").hide();
       //========================Movie Question jQuery Code]
-      $("#spagetti").hide;
+     
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
 
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "movie3"){
           $("#movie-text").text("YESSSS!");
-          $("#spagetti").show;
+          $("#spagetti").hide().fadeIn(5000);
         } 
         else {
           $("#movie-text").text("Try Again!");
@@ -87,6 +90,7 @@ Select ONE Additional Feature to Add
 
         if (answer === "book2") {
           $("#book-text").text("YESSSS!");
+          $("#history").hide().fadeIn(5000)
         } 
         else {
           $("#book-text").text("Try Again!");

@@ -1,5 +1,5 @@
 #movie-result {
-  background: rgb(244, 98, 98);
+  background: rgb(185, 52, 52);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
@@ -8,15 +8,25 @@
 }
 
 #book-result {
-  background: rgb(240, 99, 99);
+  background: rgb(185, 52, 52);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
+h1{
+  color: rgb(255, 50, 50);
+}
+label{
+  color: rgb(255, 55, 55);
+}
 hr {
   height: 5px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+}
+body{
+  background-image: url(
+  "https://as1.ftcdn.net/jpg/01/35/58/74/1000_F_135587411_jvqDLH2op5lAvBjO9rliulWcX3UsB7Ak.jpg");
+  ;
 }
